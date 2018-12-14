@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ],
+    "react/react-in-jsx-scope": "off"
+  }
+}
