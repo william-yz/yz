@@ -10,6 +10,7 @@ const handle = app.getRequestHandler();
 app.prepare()
   .then(() => {
     server.get('/system/lsof', (req, res) => app.render(req, res, '/system/lsof', req.query));
+    server.get('/genetic', (req, res) => app.render(req, res, '/genetic', req.query));
 
     server.get('*', (req, res) => handle(req, res));
 
